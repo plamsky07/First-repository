@@ -3,7 +3,7 @@ let cat = {
   age: 8
 }
 
-let dog = {
+let Sharo = {
     name: 'Sharo',
     age: 1
 }
