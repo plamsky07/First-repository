@@ -1,0 +1,312 @@
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: rgb(74, 74, 74);
+    color: white;
+    padding: 20px 50px;
+}
+.limoffer{
+    cursor: pointer;
+}
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.searchinput{
+    border: none;
+    background-color: transparent;
+}
+.searchinput::placeholder{
+    color: rgb(74, 74, 74)
+}
+.searchicon{
+    cursor: pointer;
+}
+.navbot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem{
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.slider{
+    background: url(images/background.png);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+.slidertitle{
+    position: absolute;
+    right: 50;
+    top: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    z-index: 1;
+}
+.slideritem:nth-child(4) .slidertitle{
+  right:8;
+}
+.sliderprice{
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 450;
+    font-size: 30px;
+}
+.sliderimage{  
+    z-index: 1;
+}
+.sliderwrapper{
+    display: flex;
+    width: 500vw;
+    position:relative;animation:animateright 1s}@keyframes animateright{from{right:-100vw;opacity:0} to{right:100vw;opacity:1}
+}
+.slideritem{
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.slidebg {
+    position: absolute;
+    width: 800px; 
+    height: 690px; 
+    left: 10.5%;
+    background-color: rgb(197, 0, 0);
+    border-radius: 50%; 
+    border: 2px solid #000; 
+  }
+.slideritem:nth-child(1) .slidebg{
+  background-color: rgb(197, 0, 0);
+}
+  .slideritem:nth-child(2) .slidebg{
+    background-color: rgb(236, 122, 46);
+  }
+  .slideritem:nth-child(3) .slidebg{
+    background-color: rgb(197, 0, 0);
+  }
+  .slideritem:nth-child(4) .slidebg{
+    background-color: rgb(226, 184, 177);
+  }
+  .slideritem:nth-child(5) .slidebg{
+    background-color: rgb(170, 190, 211);
+  }
+  .slideritem:nth-child(1) .sliderprice{
+    color: rgb(197, 0, 0);
+  }
+    .slideritem:nth-child(2) .sliderprice{
+    color: rgb(236, 122, 46);
+    }
+    .slideritem:nth-child(3) .sliderprice{
+      color: rgb(197, 0, 0);
+    }
+    .slideritem:nth-child(4) .sliderprice{
+      color: rgb(226, 184, 177);
+    }
+    .slideritem:nth-child(5) .sliderprice{
+      color: rgb(170, 190, 211);
+    }
+    .slideritem:nth-child(1) .slidertitle{
+        color: rgb(197, 0, 0);
+      }
+        .slideritem:nth-child(2) .slidertitle{
+            
+          color: rgb(236, 122, 46);
+        }
+        .slideritem:nth-child(3) .slidertitle{
+          color: rgb(197, 0, 0);
+        }
+        .slideritem:nth-child(4) .slidertitle{
+          color: rgb(226, 184, 177);
+        }
+        .slideritem:nth-child(5) .slidertitle{
+          color: rgb(170, 190, 211);
+        }
+.buybutton{
+    background-color: rgb(74, 74, 74);
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.buybutton:hover{
+    background-color:white;
+    color: black;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdownbutton{
+    margin-right: 50px;
+    background-color: rgb(74, 74, 74);
+    color: white;
+    border:none;
+    border-radius: 15%;
+    font-size: 18.72px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(74, 74, 74);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: white; 
+    color: #000;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropdownbutton {
+    background-color: white; 
+    color: black;
+  }
+  .bottomwrapper{
+    background: url(images/background.png);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  }
+  .clothesbuy{
+    position: absolute;
+    right: 380px;
+    bottom: -640px;
+    border:none;
+    background-color: transparent;
+    color: white;
+    font-size: 100px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .popup {
+
+    display: none;
+
+    position: fixed;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    border-radius: 8px;
+
+    z-index: 9999;
+
+    padding: 20px;
+
+}
+
+
+
+.popup-content {
+
+    text-align: center;
+
+}
+
+
+
+.close {
+
+    float: right;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    color: #aaa;
+
+}
+
+
+
+#couponButton,
+
+#copyCode {
+
+    padding: 10px 20px;
+
+    background-color: #4CAF50;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+#couponButton:hover,
+
+#copyCode:hover {
+
+    background-color: #45a049;
+
+}
+
+
+
+#discountCode {
+
+    font-size: 24px;
+
+    color: #333;
+
+    font-weight: bold;
+
+    padding: 5px 10px;
+
+    border: 2px dashed #aaa;
+
+    border-radius: 5px;
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+#copyCode {
+
+    font-size: 16px;
+
+}
+  

@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ClothesShop</title>
+</head>
+<body>
+    <nav>
+        <div class="navtop">
+            <div class="navitem">
+                <img src="images/logo.png"  alt="" class="logo">
+            </div>
+            <div class="navitem">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search..." class="searchinput">
+                    <img src="images/search.png" width="20px" height="20px" alt="" class="searchicon">
+                </div>
+            </div>
+            <button id="couponButton">Get Discount!</button>
+            <div id="couponPopup" class="popup">
+
+                <div class="popup-content">
+        
+                    <span class="close" id="closePopup">&times;</span>
+        
+                    <h2>Discount Code</h2>
+        
+                    <p>Use code: <span id="discountCode">DISCOUNT10</span> <button id="copyCode">Copy</button></p>
+        
+                </div>
+        
+            </div>
+        </div>
+        <div class="navbot">
+            <div class="navitem">
+                <img src="images/space.png"  alt="">
+            </div>
+            <div class="dropdown">
+                <button class = "dropdownbutton">MEN</button>
+                <div class="dropdown-content">
+                    <a href="maleshirts.html">SHIRTS</a>
+                    <a href="">PANTS</a>
+                </div>
+            </div>      
+            <h3 class="menuitem">JORDAN 1</h3>    
+            <h3 class="menuitem">BLAZER</h3>   
+            <h3 class="menuitem">AIR MAX</h3>   
+            <div class="dropdown">
+                <button class = "dropdownbutton">WOMEN</button>
+                <div class="dropdown-content">
+                    <a href="">SHIRTS</a>
+                    <a href="">PANTS</a>
+                </div>
+            </div>     
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderwrapper">
+            <div class="slideritem">
+                <img src="images/aj1chicago.png" alt="" class="sliderimage">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">JORDAN 1 RETRO</br>"BRED" (2013)</br></h1>
+                <h2 class="sliderprice">$320</h2>
+                <button class="buybutton">CATCH EM!</button>
+            </div>
+            <div class="slideritem">
+                <img src="images/blazeroffwhite.png" alt="" class="sliderimage">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">NIKE BLAZER MID</br>"ALL HALLOW'S EVE"</br></h1>
+                <h2 class="sliderprice">$650</h2>
+                <button class="buybutton">CATCH EM!</button>
+            </div>
+            <div class="slideritem">
+                <img src="images/airmax.png" alt="" class="sliderimage">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">NIKE AIR MAX PLUS</br>"WHITE RED BLACK"</br></h1>
+                <h2 class="sliderprice">$200</h2>
+                <button class="buybutton">CATCH EM!</button>
+            </div>
+            <div class="slideritem">
+                <img src="images/spiderman.png" alt="" class="sliderimage">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">JORDAN 1 RETRO</br>"SPIDER-MAN ACROSS "</br>THE SPIDER VERSE</br></h1>
+                <h2 class="sliderprice">$240</h2>
+                <button class="buybutton">CATCH EM!</button>
+            </div>
+            <div class="slideritem">
+                <img src="images/blackoffwhite.png" alt="" class="sliderimage">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">NIKE BLAZER MID</br>"O-W GRIM REAPER"</br></h1>
+                <h2 class="sliderprice">$600</h2>
+                <button class="buybutton">CATCH EM!</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottomwrapper">
+        <div class="bottomitem">
+            <img src="images/streetwear1.jpg" alt="" class="twoimages">
+            <a href="Men/malepants.html"><button class = "clothesbuy">PANTS</button></a>
+        </div>
+    </div>
+    <script src="./func.js"></script>
+</body>
+</html>

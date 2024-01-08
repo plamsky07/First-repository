@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Products</title>
+    <link rel="stylesheet" href="stylePage.css"> 
+    <link rel="stylesheet" href="style.css"><!-- Link your CSS file here -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navtop">
+            <div class="navitem">
+                <a href="index.html"><img src="images/logo.png"  alt="" class="logo"></a>   
+                <img style="margin-top:0px; margin-left:-30px;" src="https://cdn.shopify.com/s/files/1/0177/2424/files/Nerm-attack-mouse.gif?v=1647045712" width="90" alt="ripndip bike" data-uw-rm-ima-original="ripndip bike">                            
+            </div>
+            <div class="navitem">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search..." class="searchinput">
+                    <img src="images/search.png" width="20px" height="20px" alt="" class="searchicon">
+                </div>
+            </div>
+            <button id="couponButton">Get Discount!</button>
+            <div id="couponPopup" class="popup">
+                <div class="popup-content">       
+                    <span class="close" id="closePopup">&times;</span>      
+                    <h2 class="discount">Discount Code</h2>
+                    <p>Use code: <span id="discountCode">DISCOUNT10</span> <button id="copyCode">Copy</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="navbot">
+            <div class="navitem">
+                <img src="images/space.png"  alt="">
+            </div>
+            <div class="dropdown">
+                <button class = "dropdownbutton">CLOTHES</button>
+                <div class="dropdown-content">
+                    <a href="maleshirts.html">SHIRTS</a>
+                    <a href="malepants.html">PANTS</a>
+                </div>
+            </div>      
+            <a href="Jordan1.html"><h3 class="menuitem">JORDAN 1</h3></a>           
+            <a href="Blazer.html"><h3 class="menuitem">BLAZER</h3></a>    
+            <a href="AirMax.html"><h3 class="menuitem">AIR MAX</h3></a>   
+            <a href="DunkLow.html"><h3 class="menuitem">DUNK LOW</h3></a>      
+            <i style='font-size:24px' class='fas'>&#xf07a;</i> 
+            <i style='font-size:24px; margin-left: 20px;' class='fas'>&#xf406;</i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="products">
+            <article class="product">
+                <img src="images/blazeroffwhite.png" alt="Product 1">
+                <h2 class="productcolor">Off-White "All Hallow's Eve"</h2>
+                <div class="dropdown">
+                    <button class="dropbtn" id="selectedSize">Select Size</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="setSize('US 6')">US 6</a>
+                      <a href="#" onclick="setSize('US 7')">US 7</a>
+                      <a href="#" onclick="setSize('US 8')">US 8</a>
+                      <a href="#" onclick="setSize('US 9')">US 9</a>
+                    </div>
+                  </div>
+                <p class="productcolor">Price: $650</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product">
+                <img src="images/blackoffwhite.png" alt="Product 1">
+                <h2 class="productcolor">Off-White"Grim Reapers"</h2>
+                <div class="dropdown">
+                    <button class="dropbtn" id="selectedSize">Select Size</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="setSize('US 6')">US 6</a>
+                      <a href="#" onclick="setSize('US 7')">US 7</a>
+                      <a href="#" onclick="setSize('US 8')">US 8</a>
+                      <a href="#" onclick="setSize('US 9')">US 9</a>
+                    </div>
+                  </div>
+                <p class="productcolor">Price: $950</p>
+                <button>Add to Cart</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="./func.js"></script>
+</body>
+</html>
